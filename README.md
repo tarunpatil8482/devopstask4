@@ -1,12 +1,12 @@
-Automated Backup System
+**Automated Backup System**
 
-Project Overview
+**Project Overview**
 This project is a bash script that helps you automatically take backups of your important folders.
 It saves your data safely, creates a compressed .tar.gz file, and deletes old backups to save space.
 You can also restore your files whenever needed.
 
 How to Use ?
-Step 1 – Setup
+**Step 1 – Setup**
 
 Keep all files in one folder:
 
@@ -28,7 +28,7 @@ BACKUP_DESTINATION="./backups"
 DAILY_KEEP=7
 LOGFILE="$BACKUP_DESTINATION/backup.log"
 
-Step 2 – Take a Backup
+**Step 2 – Take a Backup**
 
 Run this command:
 
@@ -45,7 +45,7 @@ Save details in backup.log
 
 Delete older backups automatically (keeps last 7 only)
 
-Step 3 – Restore a Backup
+**Step 3 – Restore a Backup**
 
 To get your files back:
 
@@ -54,7 +54,7 @@ To get your files back:
 
 Your backup will be extracted into the restored_data folder.
 
-Step 4 – Dry Run (Test Mode)
+**Step 4 – Dry Run (Test Mode)**
 
 To see what the script will do without making changes:
 
@@ -101,7 +101,7 @@ Restoring is easy and fast.
 [2025-11-06 15:00:13] SUCCESS: Checksum verified successfully
 [2025-11-06 15:00:13] INFO: Deleted old backup: backup-2025-10-30-0910.tar.gz
 
- Notes
+ **Notes**
 
 Make sure the folder you want to back up exists.
 
@@ -109,10 +109,11 @@ The script only keeps 7 latest backups.
 
 Works on Linux or WSL (Windows Subsystem for Linux).
 
- In Short
+In Short
 
 Run ./backup.sh backup <folder> to back up.
 
 Run ./backup.sh restore <backup-file> <folder> to restore.
 
 Backups are stored in backups/ with logs and checksums
+
