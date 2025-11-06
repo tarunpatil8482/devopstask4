@@ -1,0 +1,31 @@
+[2025-11-06 14:37:45] INFO: Starting backup of ./test_data
+[2025-11-06 14:37:45] SUCCESS: Backup created: backup-2025-11-06-1437.tar.gz
+[2025-11-06 14:37:45] INFO: Checksum file created: backup-2025-11-06-1437.tar.gz.sha256
+[2025-11-06 14:37:45] SUCCESS: Checksum verified successfully for backup-2025-11-06-1437.tar.gz
+[2025-11-06 14:37:45] INFO: Running cleanup of old backups...
+[2025-11-06 14:37:45] INFO: No old backups to delete. (1 backups total)
+[2025-11-06 14:38:05] INFO: Starting backup of ./test_data
+[2025-11-06 14:38:06] SUCCESS: Backup created: backup-2025-11-06-1438.tar.gz
+[2025-11-06 14:38:06] INFO: Checksum file created: backup-2025-11-06-1438.tar.gz.sha256
+[2025-11-06 14:38:06] SUCCESS: Checksum verified successfully for backup-2025-11-06-1438.tar.gz
+[2025-11-06 14:38:06] INFO: Running cleanup of old backups...
+[2025-11-06 14:38:06] INFO: No old backups to delete. (2 backups total)
+[2025-11-06 14:44:53] INFO: Starting backup of ./test_data
+[2025-11-06 14:44:54] SUCCESS: Backup created: backup-2025-11-06-1444.tar.gz
+[2025-11-06 14:44:55] INFO: Checksum file created: backup-2025-11-06-1444.tar.gz.sha256
+[2025-11-06 14:44:55] SUCCESS: Checksum verified successfully for backup-2025-11-06-1444.tar.gz
+[2025-11-06 14:44:55] INFO: Running cleanup of old backups...
+[2025-11-06 14:56:19] INFO: Starting backup of ./test_data
+[2025-11-06 14:56:19] SUCCESS: Backup created: backup-2025-11-06-1456.tar.gz
+[2025-11-06 14:56:19] INFO: Checksum file created: backup-2025-11-06-1456.tar.gz.sha256
+[2025-11-06 14:56:20] SUCCESS: Checksum verified successfully for backup-2025-11-06-1456.tar.gz
+[2025-11-06 14:56:20] INFO: Checking for old backups...
+[2025-11-06 14:56:20] INFO: No old backups to delete. (4 total)
+[2025-11-06 14:57:09] ERROR: Backup file not found: ./backups/backup-2025-11-06-1500.tar.gz
+[2025-11-06 14:58:57] SUCCESS: Restored backup-2025-11-06-1456.tar.gz to ./restored_data
+[2025-11-06 15:55:50] INFO: Starting backup of ./test_data
+[2025-11-06 15:55:50] SUCCESS: Backup created: backup-2025-11-06-1555.tar.gz
+[2025-11-06 15:55:50] INFO: Checksum file created: backup-2025-11-06-1555.tar.gz.sha256
+[2025-11-06 15:55:50] SUCCESS: Checksum verified successfully for backup-2025-11-06-1555.tar.gz
+[2025-11-06 15:55:50] INFO: Checking for old backups...
+[2025-11-06 15:55:51] INFO: No old backups to delete. (5 total)
