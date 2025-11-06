@@ -101,6 +101,17 @@ Restoring is easy and fast.
 [2025-11-06 15:00:13] SUCCESS: Checksum verified successfully
 [2025-11-06 15:00:13] INFO: Deleted old backup: backup-2025-10-30-0910.tar.gz
 
+
+**Error Handling**
+
+| Problem          | Message                          |
+| ---------------- | -------------------------------- |
+| Folder not found | `Error: Source folder not found` |
+| No permission    | `Error: Permission denied`       |
+| Backup missing   | `Error: Backup file not found`   |
+| Config missing   | ` Config file not found`        |
+
+
  **Notes**
 
 Make sure the folder you want to back up exists.
@@ -111,9 +122,13 @@ Works on Linux or WSL (Windows Subsystem for Linux).
 
 In Short
 
-Run ./backup.sh backup <folder> to back up.
+Run ./backup.sh backup <folder> → create backup
 
-Run ./backup.sh restore <backup-file> <folder> to restore.
+Run ./backup.sh restore <backup-file> <folder> → restore
 
-Backups are stored in backups/ with logs and checksums
+Run ./backup.sh --dry-run <folder> → test backup
+
+Keeps 7 backups and deletes old ones automatically
+
+Logs everything in backup.log
 
