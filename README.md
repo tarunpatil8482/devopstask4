@@ -1,12 +1,14 @@
-**Automated Backup System**
+                                                Automated Backup System
 
-**Project Overview**
+----------------------------------------------
+1. Project Overview:
 This project is a bash script that helps you automatically take backups of your important folders.
 It saves your data safely, creates a compressed .tar.gz file, and deletes old backups to save space.
 You can also restore your files whenever needed.
 
-How to Use ?
-**Step 1 – Setup**
+----------------------------------
+2. How to Use:
+Step 1 – Setup
 
 Keep all files in one folder:
 
@@ -22,13 +24,15 @@ Give permission to run the script:
 chmod +x backup.sh
 
 
-Open backup.config and check the settings. Example:
+Open backup.config and check the settings. 
+
+Example:
 
 BACKUP_DESTINATION="./backups"
 DAILY_KEEP=7
 LOGFILE="$BACKUP_DESTINATION/backup.log"
 
-**Step 2 – Take a Backup**
+Step 2 – Take a Backup:
 
 Run this command:
 
@@ -45,7 +49,7 @@ Save details in backup.log
 
 Delete older backups automatically (keeps last 7 only)
 
-**Step 3 – Restore a Backup**
+Step 3 – Restore a Backup
 
 To get your files back:
 
@@ -54,7 +58,7 @@ To get your files back:
 
 Your backup will be extracted into the restored_data folder.
 
-**Step 4 – Dry Run (Test Mode)**
+Step 4 – Dry Run (Test Mode)
 
 To see what the script will do without making changes:
 
@@ -63,7 +67,8 @@ To see what the script will do without making changes:
 
 It will show which files it would back up and which old ones it would delete.
 
- How It Works
+-------------------------
+ 3. How It Works:
 
 The script compresses your folder into a .tar.gz file.
 
@@ -73,7 +78,8 @@ It saves a record of every step in a log file.
 
 It removes old backups, keeping only the most recent 7.
 
- Folder Structure
+--------------------------------
+4. Folder Structure
 backup-system/
 ├── backup.sh
 ├── backup.config
@@ -84,7 +90,8 @@ backup-system/
 └── test_data/
     └── sample.txt
 
- Why It’s Useful
+---------------------------------
+5. Why It’s Useful:
 
 You don’t need to manually copy files every time.
 
@@ -94,15 +101,17 @@ Logs help you check what happened and when.
 
 Restoring is easy and fast.
 
- Example Log
+-----------------------------
+6. Example Log:
 [2025-11-06 15:00:12] INFO: Starting backup of ./test_data
 [2025-11-06 15:00:13] SUCCESS: Backup created: backup-2025-11-06-1500.tar.gz
 [2025-11-06 15:00:13] INFO: Checksum file created: backup-2025-11-06-1500.tar.gz.sha256
 [2025-11-06 15:00:13] SUCCESS: Checksum verified successfully
 [2025-11-06 15:00:13] INFO: Deleted old backup: backup-2025-10-30-0910.tar.gz
 
+----------------------------
+7. Error Handling:
 
-**Error Handling**
 
 | Problem          | Message                          |
 | ---------------- | -------------------------------- |
@@ -111,24 +120,10 @@ Restoring is easy and fast.
 | Backup missing   | `Error: Backup file not found`   |
 | Config missing   | ` Config file not found`        |
 
+----------------------------------
 
- **Notes**
+8. Conclusion:
+   This project demonstrate how to automate file backups with Bash Scripting.
+   
 
-Make sure the folder you want to back up exists.
-
-The script only keeps 7 latest backups.
-
-Works on Linux or WSL (Windows Subsystem for Linux).
-
-In Short
-
-Run ./backup.sh backup <folder> → create backup
-
-Run ./backup.sh restore <backup-file> <folder> → restore
-
-Run ./backup.sh --dry-run <folder> → test backup
-
-Keeps 7 backups and deletes old ones automatically
-
-Logs everything in backup.log
 
